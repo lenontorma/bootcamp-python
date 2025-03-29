@@ -3,6 +3,11 @@ nome_valido = False
 salario_valido = False
 bonus_valido = False
 
+# Função para verificar se o nome contém apenas caracteres especiais
+def contem_apenas_caracteres_especiais(texto):
+    # Verifica se todos os caracteres não são letras (espaços são permitidos)
+    return all(not char.isalpha() and not char.isspace() for char in texto)
+
 # Loop para verificar o nome
 while not nome_valido:
     try:
@@ -11,6 +16,8 @@ while not nome_valido:
             raise ValueError("O nome não pode estar vazio.")
         elif any(char.isdigit() for char in nome):
             raise ValueError("O nome não deve conter números.")
+        elif contem_apenas_caracteres_especiais(nome):
+            raise ValueError("O nome não pode conter apenas caracteres especiais.")
         else:
             print("Nome válido:", nome)
             nome_valido = True
