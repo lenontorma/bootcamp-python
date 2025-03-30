@@ -65,7 +65,7 @@ Os testes foram realizados em um laptop equipado com um processador M1 da Apple 
 | --- | --- |
 | Python | 20 minutos |
 | Python + Pandas  | 500.40 sec  | <img src="aula-04-One-Billion-Row-Challenge-Python/images/pandas.jpg" width="150"> |
-| Python + Dask    | 249.74 sec  | <img src="aula-04-One-Billion-Row-Challenge-Python/images/dask.jpg" width="150"> |
+| Python + Dask    | 249.74 sec  | ![Dask](aula-04-One-Billion-Row-Challenge-Python/images/dask.jpg) |
 | Python + Polars  | 34.59 sec   | <img src="aula-04-One-Billion-Row-Challenge-Python/images/polars.jpg" width="150"> |
 | Python + DuckDB  | 24.24 sec   | <img src="aula-04-One-Billion-Row-Challenge-Python/images/duckdb.jpg" width="150"> |
 
